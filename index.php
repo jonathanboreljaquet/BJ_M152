@@ -1,9 +1,8 @@
 <!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
+<?php
+require_once __DIR__ . './BDD/FunctionBDD.php';
+$imageRecently = GetRecentlyImage();
+?>
 <html>
     <head>
         <meta charset="UTF-8">
@@ -15,6 +14,11 @@ and open the template in the editor.
         ?>
         <img src="Image/images.png" alt="Pas d'image">
         <h1>Bienvenue !</h1>
-        
+
+        <figure>
+            <img src="image.jpg" alt="" />
+            <figcaption>Légende associée</figcaption>
+        </figure>
+
     </body>
 </html>
